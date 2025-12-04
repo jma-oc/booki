@@ -13,16 +13,32 @@
     color: var(--main-color);
 }
 
+body * {
+    box-sizing: border-box;
+    display: flex;
+}
+
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin: 0;
+    align-items: center;
+}
+
+body script {
+    display: none;
 }
 
 .main-container {
+    flex-direction: column;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;
+}
+
+main {
+    flex-direction: column;
 }
 
 a {
@@ -58,9 +74,53 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ******/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+.header__logo img {
+    height: 19px;
+}
+.header__nav {
+    height: 35px;
+}
+.header__nav-btns {
+    list-style: none;
+    display: flex;
+    gap: 68px;
+    padding: 0 50px;
+    margin: 0;
+}
+.header__nav-btn {
+    align-items: end;
+    border-top: 2px solid transparent;
+    font-size: 16px;
+    font-weight: 400;
+}
+.header__nav-btn:hover {
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+/****** Infogroup ******/
+
+.infogroup {
+}
+
+.infogroup__title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -68,7 +128,6 @@ a {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
@@ -78,17 +137,20 @@ a {
 
 /****** Populaires ***********/
 .populaires {
+    flex-direction: column;
     width: 32%;
 }
 
 .populaires-title {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.populaires-cards {
+    flex-direction: column;
+}
+
 .populaires-cards .card {
-    display: flex;
     margin-top: 33px;
 }
 
@@ -102,10 +164,7 @@ a {
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
