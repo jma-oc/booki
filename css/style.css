@@ -21,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
     align-items: center;
 }
 body script {
@@ -42,6 +41,10 @@ a {
     color: inherit;
     text-decoration: none;
 }
+h1, h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -61,6 +64,7 @@ a {
 }
 .euro {
     font-weight: 700;
+    align-self: end;
 }
 .neutral-star {
     color: var(--main-bg-color)
@@ -111,11 +115,6 @@ a {
     flex-direction: column;
     gap: 8px;
 }
-.infogroup__headline-title {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 0;
-}
 .infogroup__headline-subtitle {
     font-size: 16px;
     font-weight: 400;
@@ -161,8 +160,12 @@ a {
 }
 .infogroup__filterbar {
     gap: 15px;
-    height: 50px;
     align-items: center;
+}
+.infogroup__filterbar-btns {
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .infogroup__filterbar-title {
     font-size: 18px;
@@ -170,13 +173,13 @@ a {
     margin: 0;
 }
 .infogroup__filterbar-btn {
+    height: 50px;
     gap: 10px;
     align-items: center;
     border: 2px solid var(--filter-border-color);
     border-radius: 25px;    
     background-color: unset;
     padding: 4px 19px;
-    height: 100%;
 }
 .infogroup__filterbar-btn:hover {
     background-color: var(--filter-bg-color);
@@ -187,6 +190,7 @@ a {
 .infogroup__filterbar-btn-label {
     font-size: 17px;
     font-weight: 700;
+    white-space: nowrap;
 }
 .infogroup__infobar {
     gap: 10px;
@@ -225,14 +229,16 @@ a {
     width: 65%;
     flex-direction: column;
     justify-content: space-between;
+    gap: 30px;
 }
 .hebergements__cards {
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .hebergements__cards a {
-    width: 250px;
+    min-width: 250px;
+    max-width: 48%;
 }
 .hebergements__cards .card {
     flex-direction: column;
@@ -313,36 +319,32 @@ a {
     margin-bottom: 5px;
 }
 
-/****** Activities ***********/
-.activities {
+/****** activites ***********/
+.activites {
     gap: 30px;
     padding: 30px;
     flex-direction: column;
 }
-.activities__container {
+.activites__container {
     gap: 30px;
     justify-content: space-between;
 }
-.activities__container a {
+.activites__container a {
     flex: 1;
     min-width: 0;
 }
-.activities__title {
-    font-size: 22px;
-    font-weight: 700;
-}
-.activities .card {
+.activites .card {
     flex-direction: column;
     padding: 0;
 }
-.activities .card img {
+.activites .card img {
     height: 380px;
     border-radius: 15px 15px 0 0;
     border-bottom: 5px solid white;
     object-fit: cover;
     border: none;
 }
-.activities__title {
+.activites__card-title {
     padding: 20px 19px;
     font-size: 16px;
     font-weight: 700;
@@ -403,9 +405,12 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites .card img {
+        height: 270px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
 }
