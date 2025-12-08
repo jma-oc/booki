@@ -348,7 +348,25 @@ a {
     font-weight: 700;
 }
 
+/****** Footer ***********/
 
+.footer {
+    background-color: var(--main-bg-color);
+}
+.footer__column {
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    gap: 15px;
+}
+.footer__column-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer__link {
+    font-size: 16px;
+    font-weight: 400;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
