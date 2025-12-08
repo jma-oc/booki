@@ -51,6 +51,7 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 100%;
 }
 .card img {
     object-fit: cover;
@@ -210,6 +211,7 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hebergements-and-populaires section {
@@ -221,6 +223,53 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hebergements__cards {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+.hebergements__cards a {
+    width: 250px;
+}
+.hebergements__cards .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+    gap: 4px;
+}
+.hebergements__cards img {
+    width: 100%;
+    height: 124px;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 5px solid white;
+}
+.hebergements__cards .card-content {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px;
+    width: 100%;
+}
+.hebergements__cards .card-txt {
+    flex-direction: column;
+    gap: 8px;
+}
+.hebergements__cards .card-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+}
+.hebergements__cards .card-rating {
+    height: 13.25px;
+    align-items: center;
+    font-size: 18px;
+    gap: 1px;
+}
+.hebergements__plus {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /****** Populaires ***********/
@@ -228,47 +277,41 @@ a {
     flex-direction: column;
     width: 32%;
 }
-
 .populaires-title {
     justify-content: space-between;
     align-items: center;
 }
-
 .populaires-cards {
     flex-direction: column;
 }
-
 .populaires-cards .card {
     margin-top: 33px;
 }
-
 .populaires-cards img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding: 10px 5px 5px 15px;
     justify-content: space-between;
+    flex-direction: column;
 }
-
+.populaires-cards .card-txt {
+    flex-direction: column;
+}
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
-
 .populaires-cards .card-subtitle {
     margin: 0;
 }
-
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
