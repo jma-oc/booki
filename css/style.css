@@ -467,7 +467,7 @@ h1, h2 {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
 
-    .infogroup__searchbar-submit p {
+    .infogroup__searchbar-submit .infogroup__searchbar-submit-label {
         display: none;
     }
 
