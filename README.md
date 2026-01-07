@@ -15,11 +15,11 @@ Ceci est le troisième projet de la formation "Développeur Web" d'OpenClassroom
 - **Google Fonts** (Police : Raleway)
 
 ## 📸 Aperçu du rendu
-Desktop
-![Aperçu Desktop](https://i.ibb.co/vvfSSZBj/booki-desktop.png)
-
-Tablette
-![Aperçu Tablette](https://i.ibb.co/WRsBJDS/booki-tablette.png)
-
-Mobile
+Desktop  
+![Aperçu Desktop](https://i.ibb.co/vvfSSZBj/booki-desktop.png)  
+  
+Tablette  
+![Aperçu Tablette](https://i.ibb.co/WRsBJDS/booki-tablette.png)  
+  
+Mobile  
 ![Aperçu Mobile](https://i.ibb.co/k2q7knr1/booki-mobile.png)
